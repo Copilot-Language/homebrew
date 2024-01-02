@@ -1,4 +1,4 @@
-class CopilotLanguage< Formula
+class copilotlanguage < Formula
   desc "Stream-based Programming Language for real time"
   homepage "copilot-language.github.io"
   url "https://github.com/Copilot-Language/copilot/archive/refs/tags/v3.17.tar.gz"
