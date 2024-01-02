@@ -9,6 +9,7 @@ class Copilotlanguage < Formula
   depends_on "cabal-install" => :build
 
   def install
+    system "cabal", "v2-update"
     system "cabal", "v2-install", *std_cabal_v2_args, Dir.glob("copilot**")
   end
 end
