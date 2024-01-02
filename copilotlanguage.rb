@@ -9,9 +9,7 @@ class Copilotlanguage < Formula
   depends_on "cabal-install" => :build
 
   def install
-    system "pwd"
-    system "ls", "-l"
     system "cabal", "v2-update"
-    system "cabal", "v2-install", *std_cabal_v2_args, "copilot**/"
+    system "cabal", "v2-install", *std_cabal_v2_args
   end
 end
