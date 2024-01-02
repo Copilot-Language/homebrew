@@ -10,6 +10,6 @@ class Copilotlanguage < Formula
 
   def install
     system "cabal", "v2-update"
-    system "cabal", "v2-install", *std_cabal_v2_args, Dir.glob("**/*.cabal")
+    system "cabal", "v2-install", *std_cabal_v2_args, Dir.glob("copilot**/")
   end
 end
