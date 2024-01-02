@@ -7,7 +7,6 @@ class Copilotlanguage < Formula
   head "https://github.com/copilot-language/copilot.git", branch: "master"
 
   depends_on "cabal-install" => :build
-  depends_on "ghc@9.6" => :build
 
   def install
     system "cabal", "v2-update"
